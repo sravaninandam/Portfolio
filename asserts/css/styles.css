@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.container-1 h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.cloud img {
+  animation: cld calc(8s * var(--i)) linear infinite;
+  opacity: 0.1;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+@keyframes cld {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 100%;
+}
+
+.portfolio-section {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.portfolio-item h3 {
+  padding-top: 20px;
+}
+
+.portfolio-item-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.portfolio-item-details {
+  display: none;
+}
+
+button {
+  color: white;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  /* background-position: center; */
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  left: 790px;
+}
+
+#navbar h2 {
+  /* position: fixed; */
+  right: 1490px;
+  bottom: -120px;
+  left: 10px;
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  color: rgb(189, 41, 41);
+  font-size: 35px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+span {
+  /* color: rgb(202, 55, 22); */
+  color: rgb(189, 41, 41);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0px auto;
+}
+
+nav ul li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: rgb(128, 0, 0);
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: rgb(76, 111, 108);
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+  padding-top: 30px;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+}
+
+h4 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.newslatter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid rgb(130, 244, 232);
+  outline: none;
+  border-radius: 30px;
+}
+
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: rgb(130, 244, 232);
+  color: white;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: 6px;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  /* background-color: #191919; */
+  background-color: black;
+}
+
+.about img {
+  height: auto;
+  width: 430px;
+  border-radius: 20%;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.about-text p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+
+button {
+  background-color: rgb(60, 106, 102);
+  color: grey;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(160, 160, 160);
+  cursor: pointer;
+
+  /* color: white; */
+}
+
+.project {
+  background: #2d2d2d;
+  
+  width: 100%;
+  height: 1800px;
+  padding: 50px 0px;
+  justify-content: center;
+}
+
+.title h2 {
+  color: white;
+  font-size: 60px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* contact */
+
+.contact-me {
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.856);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contact-me h3 {
+  font-size: 30px;
+}
+
+.contact-me p {
+  color: white;
+  width: 500px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-me p input {
+  padding: 5px;
+  width: 300px;
+}
+
+.contact-me .button-two {
+  background-color: rgb(130, 244, 232);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+  background-color: transparent;
+  /* border: 2px solid #f9004d; */
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(130, 244, 232);
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social a:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.end {
+  position: absolute;
+  color: teal;
+  bottom: 35px;
+  font-size: 14px;
+}
+.portfolio-item-title{
+  /* margin-left: 100px; */
+ 
+}
